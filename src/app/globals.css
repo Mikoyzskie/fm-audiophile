@@ -103,6 +103,10 @@
   color: #fff;
 }
 
+.button-3 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .hero {
   background-image: url("../../public/home/desktop/image-hero.jpg");
   background-repeat: no-repeat;
