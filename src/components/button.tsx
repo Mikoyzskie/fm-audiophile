@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ title }) => {
     return (
-        <a href={`/${title}`} className="sub-title button-3">
+        <a href={`/${title}`} className="sub-title button-3 flex items-center hover:text-[#d87d4a]">
             {title}
             <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path

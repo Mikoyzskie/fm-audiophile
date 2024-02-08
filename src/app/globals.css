@@ -91,6 +91,19 @@
   background-color: #fbaf85;
 }
 
+.button-2-reverse {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  transition: all 300ms ease-in-out;
+}
+.button-2-reverse:hover {
+  background-color: #4c4c4c;
+  border: 1px solid #4c4c4c;
+  color: #fff;
+}
+
 .button-2 {
   border: 1px solid #000;
   background-color: transparent;
@@ -105,6 +118,8 @@
 
 .button-3 {
   color: rgba(0, 0, 0, 0.5);
+  line-height: 0;
+  gap: 13.32px;
 }
 
 .hero {
