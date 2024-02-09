@@ -13,7 +13,7 @@ export default function Cta() {
                 alt='best gear'
                 width={540}
                 height={588}
-                className='rounded-lg'
+                className='rounded-lg max-w-[540px] w-full'
             />
         </section>
     )

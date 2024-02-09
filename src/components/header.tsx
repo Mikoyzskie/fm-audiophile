@@ -7,7 +7,7 @@ export default function Header() {
     const navs = ["home", "headphones", "speakers", "earphones"]
 
     return (
-        <header className='max-w-[1110px] w-full mx-auto pt-8 pb-9 border-b border-[rgba(255,255,255,0.2)] flex justify-between items-center'>
+        <header className='max-w-[1110px] w-full mx-auto pt-8 pb-9 border-b border-[rgba(255,255,255,0.2)] flex justify-between items-center '>
             <Image
                 src={"/shared/desktop/logo.svg"}
                 alt='logo'
