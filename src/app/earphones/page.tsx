@@ -3,13 +3,13 @@ import Header from "@/components/header"
 import Cta from "@/components/cta"
 import Categories from "@/components/categories"
 
-export default function Headphones() {
+export default function Earphones() {
     return (
         <>
             <main>
                 <div className="h-[336px] pb-[97px] bg-black flex justify-between flex-col">
                     <Header />
-                    <h2 className="h2 text-white text-center mt-auto">HEADPHONES</h2>
+                    <h2 className="h2 text-white text-center mt-auto">SPEAKERS</h2>
                 </div>
                 <div>
 

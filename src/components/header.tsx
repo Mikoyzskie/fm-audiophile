@@ -20,7 +20,7 @@ export default function Header() {
                 {
                     navs.map((nav: string) => (
                         <li key={nav}>
-                            <Link href={"#"} className='sub-title text-white uppercase hover:text-[#D87D4A]'>{nav}</Link>
+                            <Link href={`/${nav}`} className='sub-title text-white uppercase hover:text-[#D87D4A]'>{nav}</Link>
                         </li>
                     ))
                 }

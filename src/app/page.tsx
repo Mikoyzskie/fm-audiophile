@@ -53,7 +53,13 @@ export default function Home() {
           </section>
           <section className="pb-[200px]">
             <div className="h-[560px] bg-[#D87D4A] rounded-lg overflow-hidden relative mb-12 flex flex-col items-end justify-center pr-[95px]">
-              <svg className="absolute -top-9 -left-[149px] z-0" width="944" height="944" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" fill="none" fillRule="evenodd" opacity=".202"><circle cx="472" cy="472" r="235.5" /><circle cx="472" cy="472" r="270.5" /><circle cx="472" cy="472" r="471.5" /></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="944" height="944">
+                <g fill="none" stroke="#FFF" opacity="0.202">
+                  <circle cx="472" cy="472" r="235.5"></circle>
+                  <circle cx="472" cy="472" r="270.5"></circle>
+                  <circle cx="472" cy="472" r="471.5"></circle>
+                </g>
+              </svg>
               <div className="pl-6 pr-4 pt-5 pb-[17px] absolute left-[117.49px] -bottom-[29px]">
                 <Image
                   src={"/home/desktop/image-speaker-zx9.png"}
