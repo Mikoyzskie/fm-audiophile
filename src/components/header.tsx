@@ -2,9 +2,19 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
+interface INavigation {
+    name: string,
+    link: string,
+}
+
 export default function Header() {
 
-    const navs = ["home", "headphones", "speakers", "earphones"]
+    const navs = [
+        { name: "home", link: "/" },
+        { name: "headphones", link: "headphones" },
+        { name: "speakers", link: "speakers" },
+        { name: "earphones", link: "earphones" }
+    ]
 
     return (
 
@@ -18,9 +28,9 @@ export default function Header() {
 
             <ul className='flex gap-[34px]'>
                 {
-                    navs.map((nav: string) => (
-                        <li key={nav}>
-                            <Link href={`/${nav}`} className='sub-title text-white uppercase hover:text-[#D87D4A]'>{nav}</Link>
+                    navs.map((nav: INavigation, index: number) => (
+                        <li key={index}>
+                            <Link href={`/${nav.link}`} className='sub-title text-white uppercase hover:text-[#D87D4A]'>{nav.name}</Link>
                         </li>
                     ))
                 }
