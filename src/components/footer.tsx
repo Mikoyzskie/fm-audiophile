@@ -2,10 +2,20 @@ import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
+interface INavigation {
+    name: string,
+    link: string,
+}
+
 export default function Footer() {
 
-    const links = ["home", "headphones", "speakers", "earphones"]
-    const icons = ["facebook", "instagram", "twitter"]
+    const navs = [
+        { name: "home", link: "/" },
+        { name: "headphones", link: "headphones" },
+        { name: "speakers", link: "speakers" },
+        { name: "earphones", link: "earphones" }
+    ]
+
 
     return (
         <footer className='bg-[#101010]  pb-12'>
@@ -23,9 +33,9 @@ export default function Footer() {
                     />
                     <ul className='flex gap-[34px]'>
                         {
-                            links.map((link: string, index: number) => (
+                            navs.map((link: INavigation, index: number) => (
                                 <li className='sub-title text-white hover:text-[#d87d4a]' key={index}>
-                                    <Link href={"#header"}>{link}</Link>
+                                    <Link href={`${link.link}`}>{link.name}</Link>
                                 </li>
                             ))
                         }
