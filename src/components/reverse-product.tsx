@@ -9,16 +9,10 @@ interface IProduct {
     description: string;
 }
 
-export default function ProductCard({ name, image, link, description }: IProduct) {
+export default function ProductReverse({ name, image, link, description }: IProduct) {
     return (
         <div className='flex items-center gap-[125px]'>
-            <Image
-                src={image}
-                alt={name}
-                width={540}
-                height={560}
-                className='rounded-lg max-w-[560px] w-full'
-            />
+
             <div>
                 <p className='overline-text text-[#d87d4a] mb-4'>NEW PRODUCT</p>
                 <h2 className='h2 mb-8'>ZX9 <br /> SPEAKER</h2>
@@ -27,6 +21,13 @@ export default function ProductCard({ name, image, link, description }: IProduct
                     <button className='button-1 sub-title'>SEE PRODUCT</button>
                 </Link>
             </div>
+            <Image
+                src={image}
+                alt={name}
+                width={540}
+                height={560}
+                className='rounded-lg max-w-[560px] w-full'
+            />
         </div>
     )
 }
