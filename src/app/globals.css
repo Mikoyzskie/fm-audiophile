@@ -4,6 +4,14 @@
 
 /* TYPOGRAPHY */
 
+.grayish {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.orange {
+  color: #d87d4a;
+}
+
 .h1,
 .h2,
 .h3,
@@ -72,7 +80,7 @@
 }
 
 .body {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
