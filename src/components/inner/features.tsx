@@ -6,7 +6,7 @@ interface IBox {
 }
 
 interface Props {
-    feature: string[];
+    feature: string;
     box: IBox[];
 }
 
@@ -16,11 +16,15 @@ export default function Features({ feature, box }: Props) {
             <div>
                 <h3 className='h3 mb-8'>FEATURES</h3>
                 <div className='body flex flex-col gap-8 grayish'>
-                    {feature.map((text: string, index: number) => (
+                    {/* {feature.map((text: string, index: number) => (
                         <p key={index} className='max-w-[635px]'>
                             {text}
                         </p>
-                    ))}
+                    ))} */}
+
+                    <p dangerouslySetInnerHTML={{ __html: `${feature}` }} className='max-w-[635px]'>
+
+                    </p>
                 </div>
             </div>
             <div>
