@@ -1,5 +1,5 @@
 import React from 'react'
-import { earphones } from "@/app/data"
+import { headphones } from "@/app/data"
 import { notFound } from 'next/navigation';
 import Header from '@/components/header'
 
@@ -14,17 +14,9 @@ import InnerImages from '@/components/inner/inner-images'
 import { IProduct } from "@/app/types"
 
 
-const slugify = require('slugify');
-
-interface IBox {
-    count: string;
-    item: string;
-}
-
-
 export default function page({ params }: { params: { product: string } }) {
 
-    const exists = earphones.find((x: IProduct) => x.slug === params.product)
+    const exists = headphones.find((x: IProduct) => x.slug === params.product)
 
     if (!exists) {
         notFound()

@@ -9,7 +9,7 @@ export default function Headphones() {
             name: "XX99 Mark II Headphones",
             image: "/product-xx99-mark-two-headphones/desktop/image-product.jpg",
             description: "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
-            link: "/headphones/xx99-mark-II",
+            link: "/headphones/xx99-mark-two",
             reverse: false,
             newProd: true
         },
@@ -17,7 +17,7 @@ export default function Headphones() {
             name: "XX99 Mark I Headphones",
             image: "/product-xx99-mark-one-headphones/desktop/image-product.jpg",
             description: "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
-            link: "/headphones/xx99-mark-I",
+            link: "/headphones/xx99-mark-one",
             reverse: true,
             newProd: false
         },
