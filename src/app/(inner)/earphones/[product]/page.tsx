@@ -13,8 +13,11 @@ import InnerImages from '@/components/inner/inner-images'
 
 import { IProduct } from "@/app/types"
 
-
-const slugify = require('slugify');
+export async function generateMetadata({ params }: { params: { product: string } }) {
+    return {
+        title: `${params.product.split("-").join(" ").toUpperCase()} | Earphones`,
+    }
+}
 
 interface IBox {
     count: string;
