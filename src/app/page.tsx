@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Button from "@/components/button";
 import Cta from "@/components/cta";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 interface ICategory {
   name: string;
@@ -28,7 +29,9 @@ export default function Home() {
               <h1 className="h1 text-[#fff]">XX99 Mark II Headphones</h1>
               <p className="body text-[rgba(255,255,255,0.75)] mr-[49px]">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
             </div>
-            <button className="button-1 w-fit sub-title">SEE PRODUCT</button>
+            <Link href={"/headphones/xx99-mark-two"}>
+              <button className="button-1 w-fit sub-title">SEE PRODUCT</button>
+            </Link>
           </div>
         </div>
         <div className="max-w-[1110px] w-full mx-auto">
@@ -74,7 +77,9 @@ export default function Home() {
                   ZX9 SPEAKER
                 </h1>
                 <p className="body mb-10">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                <button className="button-2-reverse sub-title bg-[#000]">SEE PRODUCT</button>
+                <Link href={"/speakers/zx9"}>
+                  <button className="button-2-reverse sub-title bg-[#000]">SEE PRODUCT</button>
+                </Link>
               </div>
             </div>
             <div className="rounded-lg overflow-hidden relative mb-12">
@@ -87,7 +92,9 @@ export default function Home() {
               />
               <div className="absolute top-1/2 -translate-y-1/2 left-[95px] flex flex-col gap-8">
                 <h4 className="h4">ZX7 SPEAKER</h4>
-                <button className="sub-title button-2 w-fit">SEE PRODUCT</button>
+                <Link href={"/speakers/zx7"}>
+                  <button className="sub-title button-2 w-fit">SEE PRODUCT</button>
+                </Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-[30px]">
@@ -100,7 +107,9 @@ export default function Home() {
               />
               <div className="bg-[#f1f1f1] rounded-lg flex flex-col gap-8 justify-center pl-[95px]">
                 <h4 className="h4">YX1 EARPHONES</h4>
-                <button className="sub-title button-2 w-fit">SEE PRODUCT</button>
+                <Link href={"/earphones/yx1"}>
+                  <button className="sub-title button-2 w-fit">SEE PRODUCT</button>
+                </Link>
               </div>
             </div>
           </section>
