@@ -16,10 +16,91 @@ export default function page() {
             <div className="bg-[#101010]">
                 <Header />
             </div>
-            <div className="grow max-w-[1110px] w-full mx-auto pt-[79px] flex flex-col items-start gap-[38px]">
+            <div className="grow max-w-[1110px] w-full mx-auto pt-[79px] pb-[141px] flex flex-col items-start gap-[38px]">
                 <Back />
-                <div className="bg-white p-12 pt-14 w-full rounded-lg">
+                <div className="flex gap-[30px] w-full">
+                    <div className="bg-white p-12 pt-14 grow rounded-lg">
+                        <h2 className="font-bold text-[32px] mb-10">CHECKOUT</h2>
+                        <div className="mb-[53px]">
+                            <p className="font-bold text-[13px] text-[#D87D4A] mb-4">BILLING DETAILS</p>
+                            <div className="w-full flex flex-col gap-6">
+                                <div className="flex gap-4 w-full">
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">Name</label>
+                                        <input id="name" type="text" className="leading-[100%] border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">Email Address</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="flex flex-col gap-[9px] basis-[calc(50%-8px)]">
+                                        <label htmlFor="name" className="text-xs font-bold">Phone Number</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mb-[61px]">
+                            <p className="font-bold text-[13px] text-[#D87D4A] mb-4">SHIPPING INFO</p>
+                            <div className="w-full flex flex-col gap-6">
+                                <div className="flex flex-col gap-[9px]">
+                                    <label htmlFor="name" className="text-xs font-bold">Address</label>
+                                    <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                </div>
+                                <div className="flex gap-4 w-full">
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">ZIP Code</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">City</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <div className="flex flex-col gap-[9px] basis-[calc(50%-8px)]">
+                                        <label htmlFor="name" className="text-xs font-bold">Country</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p className="font-bold text-[13px] text-[#D87D4A] mb-4">PAYMENT DETAILS</p>
+                            <div className="w-full flex flex-col gap-6">
+                                <div className="flex gap-4">
+                                    <span className="text-xs font-bold basis-1/2">Payment Method</span>
+                                    <div className="flex flex-col gap-4 basis-1/2">
 
+                                        <div className="flex items-center mb-4">
+                                            <input id="default-radio-1" type="radio" value="" name="default-radio" className="outline-none w-4 h-4 text-[#D87D4A] bg-gray-100 border-gray-300 focus:ring-0 dark:focus:ring-[#D87D4A] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label htmlFor="default-radio-1" className="ms-2 text-sm font-medium">e-Money</label>
+                                        </div>
+                                        <div className="flex items-center">
+                                            <input id="default-radio-2" type="radio" value="" name="default-radio" className="outline-none w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label htmlFor="default-radio-2" className="ms-2 text-sm font-medium ">Cash on Delivery</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 w-full">
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">e-Money Number</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                    <div className="flex flex-col gap-[9px] basis-1/2">
+                                        <label htmlFor="name" className="text-xs font-bold">e-Money PIN</label>
+                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bg-white max-w-[350px] max-h-[612opx] h-full p-8 w-full rounded-lg">
+                        <h3 className="font-bold text-lg">SUMMARY</h3>
+                    </div>
                 </div>
             </div>
 
