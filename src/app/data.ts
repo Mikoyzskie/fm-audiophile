@@ -1,8 +1,9 @@
 import { IProduct } from "./types";
 
-export const headphones: IProduct[] = [
+export const products: IProduct[] = [
   {
     slug: "xx99-mark-two",
+    category: "headphones",
     hero: "/product-xx99-mark-two-headphones/desktop/image-product.jpg",
     new: true,
     name: "XX99 Mark II Headphones",
@@ -34,9 +35,11 @@ export const headphones: IProduct[] = [
       },
     ],
     images: "product-xx99-mark-two-headphones",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
   {
     slug: "xx99-mark-one",
+    category: "headphones",
     hero: "/product-xx99-mark-one-headphones/desktop/image-product.jpg",
     new: true,
     name: "XX99 Mark I Headphones",
@@ -64,9 +67,11 @@ export const headphones: IProduct[] = [
       },
     ],
     images: "product-xx99-mark-one-headphones",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
   {
     slug: "xx59",
+    category: "headphones",
     hero: "/product-xx59-headphones/desktop/image-product.jpg",
     new: true,
     name: "XX59 Headphones",
@@ -94,12 +99,11 @@ export const headphones: IProduct[] = [
       },
     ],
     images: "product-xx59-headphones",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
-];
-
-export const earphones: IProduct[] = [
   {
     slug: "yx1",
+    category: "earphones",
     hero: "/product-yx1-earphones/desktop/image-product.jpg",
     new: false,
     name: "YX1 WIRELESS EARPHONES",
@@ -131,12 +135,11 @@ export const earphones: IProduct[] = [
       },
     ],
     images: "product-yx1-earphones",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
-];
-
-export const speakers: IProduct[] = [
   {
     slug: "zx9",
+    category: "speakers",
     hero: "/product-zx9-speaker/desktop/image-product.jpg",
     new: true,
     name: "ZX9 SPEAKER",
@@ -168,9 +171,11 @@ export const speakers: IProduct[] = [
       },
     ],
     images: "product-zx9-speaker",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
   {
     slug: "zx7",
+    category: "speakers",
     hero: "/product-zx7-speaker/desktop/image-product.jpg",
     new: false,
     name: "ZX7 SPEAKER",
@@ -202,5 +207,6 @@ export const speakers: IProduct[] = [
       },
     ],
     images: "product-zx7-speaker",
+    like: ["xx99-mark-one", "xx59", "zx9"],
   },
 ];

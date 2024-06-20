@@ -4,6 +4,7 @@ export interface IBox {
 }
 
 export interface IProduct {
+  category: string;
   slug: string;
   hero: string;
   name: string;
@@ -13,4 +14,5 @@ export interface IProduct {
   features: string;
   box: IBox[];
   images: string;
+  like: string[];
 }

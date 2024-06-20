@@ -1,5 +1,5 @@
 import React from 'react'
-import { headphones } from "@/app/data"
+import { products } from "@/app/data"
 import { notFound } from 'next/navigation';
 import Header from '@/components/header'
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: { product: string }
 
 export default function page({ params }: { params: { product: string } }) {
 
-    const exists = headphones.find((x: IProduct) => x.slug === params.product)
+    const exists = products.find((x: IProduct) => x.category === "headphones" && x.slug === params.product)
 
     if (!exists) {
         notFound()
