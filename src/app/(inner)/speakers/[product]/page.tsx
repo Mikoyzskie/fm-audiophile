@@ -20,7 +20,6 @@ export async function generateMetadata({ params }: { params: { product: string }
 }
 
 
-
 export default function page({ params }: { params: { product: string } }) {
 
     const exists = products.find((x: IProduct) => x.category === "speakers" && x.slug === params.product)

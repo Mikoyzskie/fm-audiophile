@@ -3,6 +3,8 @@ import { products } from "@/app/data"
 import { notFound } from 'next/navigation';
 import Header from '@/components/header'
 
+import Image from "next/image"
+
 import ProductInner from '@/components/inner/product-inner'
 import Footer from '@/components/footer'
 import Cta from '@/components/cta'
@@ -51,20 +53,37 @@ export default function page({ params }: { params: { product: string } }) {
                 <InnerImages page={exists.images} />
             </div>
             <div className='max-w-[1110px] w-full mx-auto'>
-                {
-                    exists.like.map((y: string, index: number) => {
-                        const like = products.find((x: IProduct) => x.slug === y)
-                        // console.log(like);
-
-                        return (
-                            <p key={index}>
-                                {
-                                    like?.name
-                                }
-                            </p>
-                        )
-                    })
-                }
+                <div>
+                    <h3 className='text-center h3 mb-16'> YOU MAY ALSO LIKE</h3>
+                    <div className='grid grid-cols-3 gap-[30px]'>
+                        {
+                            exists.like.map((y: string, index: number) => {
+                                const maylike = products.find((x: IProduct) => x.slug === y)
+                                let name = maylike?.name.split(' ')
+                                name?.pop()
+                                return (
+                                    <div className='flex flex-col gap-10' key={index}>
+                                        <Image
+                                            src={`/shared/desktop/image-${maylike?.slug}-${maylike?.category}.jpg`}
+                                            alt='mark-one'
+                                            width={350}
+                                            height={318}
+                                            className='rounded-lg'
+                                        />
+                                        <div className='flex flex-col items-center justify-center gap-8'>
+                                            <h5 className='h5'>
+                                                {
+                                                    name?.join(' ')
+                                                }
+                                            </h5>
+                                            <button className='button-1 sub-title'>SEE PRODUCT</button>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
                 {/* <Maylike /> */}
                 <Categories />
                 <Cta />
