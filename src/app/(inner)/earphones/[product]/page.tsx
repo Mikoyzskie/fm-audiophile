@@ -14,6 +14,7 @@ import Features from '@/components/inner/features'
 import InnerImages from '@/components/inner/inner-images'
 
 import { IProduct } from "@/app/types"
+import Link from 'next/link';
 
 export async function generateMetadata({ params }: { params: { product: string } }) {
     return {
@@ -73,10 +74,12 @@ export default function page({ params }: { params: { product: string } }) {
                                         <div className='flex flex-col items-center justify-center gap-8'>
                                             <h5 className='h5'>
                                                 {
-                                                    name?.join(' ')
+                                                    name?.join(' ') === "ZX9" || name?.join(' ') === "ZX7" ? name?.join(' ') + " SPEAKER" : name?.join(' ')
                                                 }
                                             </h5>
-                                            <button className='button-1 sub-title'>SEE PRODUCT</button>
+                                            <Link href={`/${maylike?.category}/${maylike?.slug}`}>
+                                                <button className='button-1 sub-title'>SEE PRODUCT</button>
+                                            </Link>
                                         </div>
                                     </div>
                                 )

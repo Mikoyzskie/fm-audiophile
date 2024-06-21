@@ -67,7 +67,7 @@ export const products: IProduct[] = [
       },
     ],
     images: "product-xx99-mark-one-headphones",
-    like: ["xx99-mark-one", "xx59", "zx9"],
+    like: ["xx99-mark-two", "xx59", "zx9"],
   },
   {
     slug: "xx59",
@@ -99,7 +99,7 @@ export const products: IProduct[] = [
       },
     ],
     images: "product-xx59-headphones",
-    like: ["xx99-mark-one", "xx59", "zx9"],
+    like: ["xx99-mark-two", "xx99-mark-one", "zx9"],
   },
   {
     slug: "yx1",
@@ -171,7 +171,7 @@ export const products: IProduct[] = [
       },
     ],
     images: "product-zx9-speaker",
-    like: ["xx99-mark-one", "xx59", "zx9"],
+    like: ["zx7", "xx99-mark-one", "xx59"],
   },
   {
     slug: "zx7",
@@ -207,6 +207,6 @@ export const products: IProduct[] = [
       },
     ],
     images: "product-zx7-speaker",
-    like: ["xx99-mark-one", "xx59", "zx9"],
+    like: ["zx9", "xx99-mark-one", "xx59"],
   },
 ];
