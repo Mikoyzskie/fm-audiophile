@@ -27,11 +27,11 @@ export default function page() {
                                 <div className="flex gap-4 w-full">
                                     <div className="flex flex-col gap-[9px] basis-1/2">
                                         <label htmlFor="name" className="text-xs font-bold">Name</label>
-                                        <input id="name" type="text" className="leading-[100%] border outline-none p-[18px] rounded-lg text-[14px]" />
+                                        <input id="name" type="text" className="leading-[100%] border outline-none p-[18px] rounded-lg text-[14px]" autoComplete="off"/>
                                     </div>
                                     <div className="flex flex-col gap-[9px] basis-1/2">
-                                        <label htmlFor="name" className="text-xs font-bold">Email Address</label>
-                                        <input id="name" type="text" className=" border outline-none p-[18px] rounded-lg text-[14px]" />
+                                        <label htmlFor="email" className="text-xs font-bold">Email Address</label>
+                                        <input id="email" type="email" className=" border outline-none p-[18px] rounded-lg text-[14px]" autoComplete="false"/>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
