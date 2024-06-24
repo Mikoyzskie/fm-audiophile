@@ -1,6 +1,7 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Back from "@/components/inner/goback"
+import Image from "next/image"
 
 
 import type { Metadata } from "next";
@@ -98,8 +99,79 @@ export default function page() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white max-w-[350px] max-h-[612opx] h-full p-8 w-full rounded-lg">
+                    <div className="bg-white max-w-[350px] max-h-[612opx] h-full p-8 w-full rounded-lg flex flex-col gap-8">
                         <h3 className="font-bold text-lg">SUMMARY</h3>
+                        <div className="flex flex-col gap-6">
+                            <div className="flex justify-between">
+                                <div className="flex gap-4 items-center">
+                                    <Image
+                                        src={"/product-xx99-mark-two-headphones/desktop/image-product.jpg"}
+                                        alt="Product Image"
+                                        height={64}
+                                        width={64}
+                                        className="rounded-lg"
+                                    />
+                                    <div className="font-bold leading-[25px] gap-2">
+                                        <p className="text-[15px]">XX99 MK II</p>
+                                        <p className="text-sm text-[rgba(0,0,0,0.5)]">$ 2,999</p>
+                                    </div>
+                                </div>
+                                <span className="text-[rgba(0,0,0,0.5)] font-bold text-[15px] py-3">x1</span>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex gap-4 items-center">
+                                    <Image
+                                        src={"/product-xx99-mark-two-headphones/desktop/image-product.jpg"}
+                                        alt="Product Image"
+                                        height={64}
+                                        width={64}
+                                        className="rounded-lg"
+                                    />
+                                    <div className="font-bold leading-[25px] gap-2">
+                                        <p className="text-[15px]">XX99 MK II</p>
+                                        <p className="text-sm text-[rgba(0,0,0,0.5)]">$ 2,999</p>
+                                    </div>
+                                </div>
+                                <span className="text-[rgba(0,0,0,0.5)] font-bold text-[15px] py-3">x1</span>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex gap-4 items-center">
+                                    <Image
+                                        src={"/product-xx99-mark-two-headphones/desktop/image-product.jpg"}
+                                        alt="Product Image"
+                                        height={64}
+                                        width={64}
+                                        className="rounded-lg"
+                                    />
+                                    <div className="font-bold leading-[25px] gap-2">
+                                        <p className="text-[15px]">XX99 MK II</p>
+                                        <p className="text-sm text-[rgba(0,0,0,0.5)]">$ 2,999</p>
+                                    </div>
+                                </div>
+                                <span className="text-[rgba(0,0,0,0.5)] font-bold text-[15px] py-3">x1</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="flex flex-col gap-2 text-[rgba(0,0,0,0.5)] text-[15px] pb-6">
+                                <div className="flex justify-between items-center">
+                                    <p>TOTAL</p>
+                                    <p className="text-black font-bold text-lg">$ 5,396</p>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p>SHIPPING</p>
+                                    <p className="text-black font-bold text-lg">$ 5,396</p>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <p>{"VAT (INLUDED)"}</p>
+                                    <p className="text-black font-bold text-lg">$ 5,396</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <p className="text-[rgba(0,0,0,0.5)]">GRAND TOTAL</p>
+                                <p className="text-[#D87D4A] font-bold text-lg">$ 5,396</p>
+                            </div>
+                        </div>
+                        <button className="button-1 w-full sub-title">CONTINUE & PAY</button>
                     </div>
                 </div>
             </div>
